@@ -6,6 +6,7 @@ modules:
       icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
 resources:
   - key: main
+    path: .
 app:
   runtime:
     name: nodejs22.x
