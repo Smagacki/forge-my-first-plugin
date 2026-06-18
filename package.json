@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "my-first-plugin",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Forge app clean config",
   "dependencies": {}
 }
