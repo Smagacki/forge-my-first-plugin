@@ -14,7 +14,6 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-size: 22
           node-version: 22
 
       - name: Install Forge CLI
@@ -25,7 +24,7 @@ jobs:
 
       - name: Deploy to Atlassian Cloud
         env:
-          FORGE_EMAIL: "waldemar.smagacki@it9.com"
+          FORGE_EMAIL: "waldemar.smagacki@it9.com.pl"
           FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
         run: |
           forge settings set usage-analytics false
