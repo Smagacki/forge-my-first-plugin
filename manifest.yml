@@ -6,7 +6,7 @@ modules:
       icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
   function:
     - key: main
-      handler: index.run
+      handler: src/index.run
 resources:
   - key: main
     path: .
