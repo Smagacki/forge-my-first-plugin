@@ -1,7 +1,6 @@
 ﻿{
   "name": "my-first-plugin",
   "version": "1.0.0",
-  "dependencies": {
-    "@forge/ui": "^1.11.0"
-  }
+  "description": "Forge app clean config",
+  "dependencies": {}
 }
