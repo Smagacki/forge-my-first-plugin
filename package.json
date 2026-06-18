@@ -1,0 +1,7 @@
+﻿{
+  "name": "my-first-plugin",
+  "version": "1.0.0",
+  "dependencies": {
+    "@forge/ui": "^1.11.0"
+  }
+}

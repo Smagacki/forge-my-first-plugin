@@ -1,0 +1,12 @@
+modules:
+  jira:issuePanel:
+    - key: my-first-plugin-panel
+      function: main
+      title: Moja Pierwsza Wtyczka
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+resources:
+  - key: main
+app:
+  runtime:
+    name: nodejs22.x
+  id: ari:cloud:ecosystem::app/d2ca9f6a-1f50-4f5a-8474-1e8fed90a1fb

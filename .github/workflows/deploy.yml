@@ -1,0 +1,32 @@
+﻿name: Forge Deploy Cloud
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-size: 22
+          node-version: 22
+
+      - name: Install Forge CLI
+        run: npm install -g @forge/cli
+
+      - name: Install App Dependencies
+        run: npm install
+
+      - name: Deploy to Atlassian Cloud
+        env:
+          FORGE_EMAIL: "waldemar.smagacki@it9.com"
+          FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
+        run: |
+          forge settings set usage-analytics false
+          forge deploy -e development
