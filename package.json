@@ -2,5 +2,7 @@
   "name": "my-first-plugin",
   "version": "1.0.5",
   "description": "Forge app clean config",
-  "dependencies": {}
+  "devDependencies": {
+    "@babel/preset-react": "^8.0.1"
+  }
 }
